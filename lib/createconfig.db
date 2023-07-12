@@ -1,0 +1,17 @@
+::default command script by redacted :D
+@cd..
+::code
+if not exist "config.bat" goto :mkconfig
+if exist "config.bat" goto :extmkconfig
+:mkconfig
+set /p serverfile=serverfile$
+set /p serverram=ram$
+set /p version=version$
+set /p customname=customname$
+echo set serverfile=%serverfile% > config.bat
+echo set serverram=%serverram% >> config.bat
+echo set version=%version% >> config.bat
+echo set customname=%customname% >> config.bat
+echo created config
+timeout /t 4
+:extmkconfig

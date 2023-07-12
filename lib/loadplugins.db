@@ -1,0 +1,5 @@
+::default command script by redacted :D
+@cd..
+::code
+cd svcbin
+if exist "plgload.bat" call plgload.bat

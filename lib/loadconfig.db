@@ -1,0 +1,4 @@
+::default command script by redacted :D
+@cd..
+::code
+if exist "config.bat" call config.bat
